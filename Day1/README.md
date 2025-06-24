@@ -15,3 +15,4 @@ A beginner-friendly Python program that generates a fun band name based on user 
 - Basic string manipulation
 
 #### 💻 Example
+![Day1](https://github.com/user-attachments/assets/35a45901-d41c-49c8-868a-70a8a5c224e4)
