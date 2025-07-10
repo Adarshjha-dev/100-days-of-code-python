@@ -16,4 +16,4 @@ A Python turtle graphics project inspired by Damien Hirst’s dot paintings. Thi
 - Python tuples and how to generate random RGB colors
 
 #### 💻 Example
-![Day18](https://github.com/user-attachments/assets/18e32261-c239-42ff-bcc1-cdab8b298c6c)
+![Day18](https://github.com/user-attachments/assets/3d8ff8c8-d38a-4cdd-bc27-43bb95819d1d)
