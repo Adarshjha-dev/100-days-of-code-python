@@ -1,23 +1,18 @@
 import os
 import requests
-from requests.auth import HTTPBasicAuth
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
-SHEETY_ENDPOINT = os.environ["SHEETY_ENDPOINT"]
+SHEETY_PRICES_ENDPOINT = os.getenv("SHEETY_ENDPOINT")
 
 class DataManager:
 
     def __init__(self):
-        self._user = os.environ["SHEETY_USERNAME"]
-        self._password = os.environ["SHEETY_PASSWORD"]
-        self._auth = HTTPBasicAuth(self._user, self._password)
         self.destination_data = {}
 
     def get_destination_data(self):
-        response = requests.get(url=SHEETY_ENDPOINT, auth=self._auth)
+        response = requests.get(url=SHEETY_PRICES_ENDPOINT)
         data = response.json()
         self.destination_data = data["prices"]
         return self.destination_data
@@ -30,7 +25,7 @@ class DataManager:
                 }
             }
             response = requests.put(
-                url=f"{SHEETY_ENDPOINT}/{city['id']}",
-                json=new_data,
+                url=f"{SHEETY_PRICES_ENDPOINT}/{city['id']}",
+                json=new_data
             )
             print(response.text)
