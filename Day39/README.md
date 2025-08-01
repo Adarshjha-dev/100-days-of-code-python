@@ -15,3 +15,6 @@ A Python project that tracks flight prices and sends Telegram alerts when deals 
 - Filtering and selecting optimal data from API responses  
 - Sending push notifications through the Telegram Bot API
 - Working with date ranges to search flights within specific time windows  
+
+#### 💻 Example
+![Day39](https://github.com/user-attachments/assets/29f746ef-8a59-44db-9e9f-9789f61f040e)
